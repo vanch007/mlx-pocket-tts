@@ -258,3 +258,7 @@ def main() -> None:
         quantize=args.quantize,
         reload=args.reload,
     )
+
+
+if __name__ == '__main__':
+    main()
