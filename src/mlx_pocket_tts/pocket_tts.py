@@ -12,6 +12,7 @@ from .audio import load_audio
 from .codec.conv import ConvTranspose1d
 from .conditioners import TokenizedText
 from .config import ModelConfig
+from .defaults import LANGUAGE_ARTIFACTS
 from .flow_lm import FlowLMModel
 from .mimi import MimiAdapter
 from .results import GenerationResult
@@ -21,7 +22,13 @@ from .text_chunking import (
 from .text_chunking import (
     split_into_best_sentences as official_split_into_best_sentences,
 )
-from .utils import PREDEFINED_VOICES, download_if_necessary, load_predefined_voice
+from .utils import (
+    OFFICIAL_VOICE_NAMES,
+    PREDEFINED_VOICES,
+    download_if_necessary,
+    load_predefined_voice,
+    predefined_voice_source,
+)
 
 DEFAULT_TEMPERATURE = 0.7
 DEFAULT_LSD_DECODE_STEPS = 1
@@ -51,7 +58,7 @@ class Model(nn.Module):
         self.has_voice_cloning = config.has_voice_cloning
         self.model_path: Path | None = None
         self.model_revision: str | None = None
-        self.origin: str | None = None
+        self.origin: str | Path | None = None
         self._voice_state_cache: dict[tuple[str, bool], dict[str, Any]] = {}
 
         self.speaker_proj_weight = mx.zeros(
@@ -213,7 +220,14 @@ class Model(nn.Module):
             if isinstance(loaded, dict):
                 return loaded
             prompt = loaded
-        elif isinstance(audio_conditioning, str) and audio_conditioning in PREDEFINED_VOICES:
+        elif isinstance(audio_conditioning, str) and audio_conditioning in OFFICIAL_VOICE_NAMES:
+            language = self._predefined_voice_language()
+            if language is not None:
+                return self._load_voice_file(
+                    download_if_necessary(
+                        predefined_voice_source(audio_conditioning, language=language)
+                    )
+                )
             prompt = load_predefined_voice(audio_conditioning)
         else:
             if not self.has_voice_cloning:
@@ -242,6 +256,12 @@ class Model(nn.Module):
             return direct
         candidate = self.model_path / "embeddings" / f"{text}.safetensors"
         return candidate if candidate.is_file() else None
+
+    def _predefined_voice_language(self) -> str | None:
+        if self.origin is None:
+            return None
+        language = self.origin.stem if isinstance(self.origin, Path) else str(self.origin)
+        return language if language in LANGUAGE_ARTIFACTS else None
 
     def _load_voice_file(self, path: Path) -> mx.array | dict[str, Any]:
         tensors = mx.load(str(path))
@@ -533,12 +553,16 @@ class Model(nn.Module):
 
         prompt = voice or DEFAULT_AUDIO_PROMPT
         if isinstance(prompt, str):
-            if prompt in PREDEFINED_VOICES:
+            if prompt in PREDEFINED_VOICES or (
+                prompt in OFFICIAL_VOICE_NAMES and self._predefined_voice_language() is not None
+            ):
                 return prompt
             if self._local_voice_path(prompt) is not None:
                 return prompt
             normalized = prompt.lower()
-            if normalized in PREDEFINED_VOICES:
+            if normalized in PREDEFINED_VOICES or (
+                normalized in OFFICIAL_VOICE_NAMES and self._predefined_voice_language() is not None
+            ):
                 return normalized
             if prompt.startswith(("http://", "https://", "hf://")):
                 return prompt

@@ -96,6 +96,9 @@ voice-state export/import and the official configuration/checkpoint arguments.
 
 Local `.yaml`, HTTPS URLs and `hf://repo/path@revision` configs are converted into deterministic
 MLX caches. Converted artifact directories and `config.json` files load directly.
+Preset voice names used with a language config resolve to that language model's matching state;
+for best baseline quality use `lola` (Spanish), `juergen` (German), `estelle` (French), `giovanni`
+(Italian), or `rafael` (Portuguese).
 
 ```bash
 uv run mlx-pocket-tts convert \
@@ -164,16 +167,22 @@ CUDA/DDP with a single-Mac MLX loop:
 ```python
 from mlx_pocket_tts import load
 from mlx_pocket_tts.training import (
-    EMA, FlowArgs, LatentDataLoader, OptimArgs, TrainArgs, TrainableTTS,
-    Trainer, build_optimizer, export_inference_artifact, precompute_manifest,
+    EMA,
+    FlowArgs,
+    LatentDataLoader,
+    OptimArgs,
+    TrainArgs,
+    TrainableTTS,
+    Trainer,
+    build_optimizer,
+    export_inference_artifact,
+    precompute_manifest,
     save_checkpoint,
 )
 
 base = load("models/english-clone-mlx")
 cache = precompute_manifest("data/train.jsonl", base, "runs/demo/cache")
-loader = LatentDataLoader(
-    cache["manifest"], base.flow_lm.conditioner.tokenizer.sp, batch_size=4
-)
+loader = LatentDataLoader(cache["manifest"], base.flow_lm.conditioner.tokenizer.sp, batch_size=4)
 model = TrainableTTS(base, TrainArgs(flow=FlowArgs(type="lsd")))
 optimizer = build_optimizer(model, OptimArgs())
 ema = EMA(model, 0.999)
