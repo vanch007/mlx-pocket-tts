@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mlx-pocket-tts"
+version = "0.1.0"
+description = "Standalone Apple Silicon MLX port of Kyutai Pocket TTS"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+  "fastapi>=0.115",
+  "huggingface-hub>=0.34",
+  "mlx>=0.29",
+  "numpy>=1.26",
+  "python-multipart>=0.0.20",
+  "pyyaml>=6",
+  "requests>=2.32",
+  "scipy>=1.12",
+  "sentencepiece>=0.2",
+  "soundfile>=0.13",
+  "uvicorn>=0.34",
+]
+
+[project.optional-dependencies]
+dev = ["httpx>=0.28", "pytest>=8", "ruff>=0.12"]
+eval = ["mlx-whisper>=0.4.3"]
+
+[project.scripts]
+mlx-pocket-tts = "mlx_pocket_tts.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mlx_pocket_tts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/mlx_pocket_tts/base.py" = ["ALL"]
+"src/mlx_pocket_tts/cache.py" = ["ALL"]
+"src/mlx_pocket_tts/codec/*.py" = ["ALL"]
