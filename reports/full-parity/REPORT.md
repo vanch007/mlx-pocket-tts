@@ -51,6 +51,17 @@ The real 8-bit server was opened in the Codex in-app browser. The official contr
 text submission returned HTTP 200, and the UI displayed a playable two-second audio element plus
 a download link. It reported 0.18 seconds to first audio, 0.26 seconds total and 10.2× real time.
 
+## Published release
+
+- Source: `https://github.com/vanch007/mlx-pocket-tts` (`main`, public).
+- Model: `https://huggingface.co/vanch007/mlx-pocket-tts` (public, ungated).
+- Hugging Face revision: `eae6725fa3234f969ddd1fcbf0c80dc14c7057bb`.
+- Release format: 8-bit FlowLM, source-precision Mimi, 26 preset voice embeddings.
+- Remote snapshot replay: strict load and generation passed; RTF 0.142, peak RSS 0.475 GB,
+  finite unclipped 24-kHz waveform and ASR WER 0.0.
+- Model SHA-256: `6682335a776faae2d27b77fc0a0b7d8f382a055ed14a8434c37eb15d889f6eb8`.
+- The project README links to the model and the model card links back to the project.
+
 ## Known failures and limits
 
 - The one-step depth-distillation artifact has ASR WER 1.0. It is only an architecture smoke and
@@ -62,5 +73,5 @@ a download link. It reported 0.18 seconds to first audio, 0.26 seconds total and
   paths passed. This is an upstream artifact mismatch, not silently treated as a pass.
 - Starlette emits one TestClient/httpx deprecation warning; runtime HTTP and browser replay pass.
 
-Generated model weights, checkpoints, WAV files and voice states remain local and ignored by Git.
-
+Training checkpoints, generated WAV files and local voice states remain ignored by Git. Only the
+verified final 8-bit artifact is published in the linked Hugging Face model repository.

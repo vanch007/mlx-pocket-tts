@@ -1,0 +1,22 @@
+{
+  "model": "<USER_CACHE>/huggingface/hub/models--vanch007--mlx-pocket-tts/snapshots/eae6725fa3234f969ddd1fcbf0c80dc14c7057bb",
+  "revision": "eae6725fa3234f969ddd1fcbf0c80dc14c7057bb",
+  "language": null,
+  "output": "<PROJECT_ROOT>/outputs/release-upload-remote.wav",
+  "samples": 103680,
+  "sample_rate": 24000,
+  "audio_seconds": 4.32,
+  "load_seconds": 10.346511792013189,
+  "generation_seconds": 0.6133758330106502,
+  "time_to_first_audio_seconds": 0.3760547499987297,
+  "rtf": 0.1419851465302431,
+  "peak_memory_gb": 0.474913023,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.6692081689834595,
+    "maximum": 0.4013337194919586,
+    "rms": 0.10835931450128555,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.007484568282961845
+  }
+}
