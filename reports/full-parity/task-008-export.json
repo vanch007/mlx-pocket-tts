@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "checkpoint_step": 1,
+  "ema_decay": 0.999,
+  "artifact": "outputs/full-parity/training/task-008-export-step1",
+  "strict_load": true,
+  "samples": 44160,
+  "sample_rate": 24000,
+  "duration_sec": 1.84,
+  "generation_sec": 0.18028195800434332,
+  "rtf": 0.09797932500236049,
+  "finite": true,
+  "peak": 0.5235213041305542,
+  "reference": "Hello from native MLX training.",
+  "asr_transcript": "Hello from Native MLX Training.",
+  "wer": 0.0,
+  "wav": "outputs/full-parity/training/task-008-export-step1.wav",
+  "overfit_artifact_quality": {
+    "checkpoint_step": 30,
+    "strict_load": true,
+    "generation_pass": true,
+    "asr_transcript": "I love you.",
+    "wer": 1.0,
+    "status": "fail",
+    "disposition": "retained only as an overfit/resume test artifact; not release quality"
+  }
+}

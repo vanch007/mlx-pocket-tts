@@ -1,0 +1,40 @@
+{
+  "root": {
+    "status": 200,
+    "has_ui": true,
+    "default_text_replaced": true
+  },
+  "health": {
+    "status": 200,
+    "json": {
+      "status": "healthy",
+      "model_revision": null
+    }
+  },
+  "default_tts": {
+    "status": 200,
+    "bytes": 96044,
+    "riff": true
+  },
+  "named_tts": {
+    "status": 200,
+    "bytes": 61484,
+    "riff": true
+  },
+  "upload_tts": {
+    "status": 200,
+    "bytes": 69164,
+    "riff": true
+  },
+  "browser_replay": {
+    "status": "pass",
+    "browser": "Codex In-app Browser",
+    "text": "Browser replay passes with native MLX.",
+    "first_audio_sec": 0.18,
+    "total_sec": 0.26,
+    "reported_realtime_multiple": 10.2,
+    "playable_audio_visible": true,
+    "download_link_visible": true
+  },
+  "status": "pass"
+}

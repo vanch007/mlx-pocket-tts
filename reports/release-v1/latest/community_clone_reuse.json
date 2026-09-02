@@ -1,0 +1,21 @@
+{
+  "model": "mlx-community/pocket-tts",
+  "revision": "cbf71d5f6657bbc3f4bc02f85ee408261225bec7",
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/community_clone_reuse.wav",
+  "samples": 65280,
+  "sample_rate": 24000,
+  "audio_seconds": 2.72,
+  "load_seconds": 0.033398708001186606,
+  "generation_seconds": 0.2206404999960796,
+  "time_to_first_audio_seconds": 0.046661916996527,
+  "rtf": 0.08111783088091161,
+  "peak_memory_gb": 0.886860186,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.47158533334732056,
+    "maximum": 0.24748000502586365,
+    "rms": 0.07586883008480072,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.022273285314440727
+  }
+}

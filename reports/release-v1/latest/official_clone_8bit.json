@@ -1,0 +1,21 @@
+{
+  "model": "models/english-clone-mlx-8bit",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/official_clone_8bit.wav",
+  "samples": 97920,
+  "sample_rate": 24000,
+  "audio_seconds": 4.08,
+  "load_seconds": 0.030207542004063725,
+  "generation_seconds": 0.2801653329952387,
+  "time_to_first_audio_seconds": 0.048924707996775396,
+  "rtf": 0.06866797377334283,
+  "peak_memory_gb": 0.946516235,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.25105878710746765,
+    "maximum": 0.26188984513282776,
+    "rms": 0.028045205399394035,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.025194035843014717
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "models/english-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/exported_voice.wav",
+  "samples": 53760,
+  "sample_rate": 24000,
+  "audio_seconds": 2.24,
+  "load_seconds": 0.03167945799941663,
+  "generation_seconds": 0.25335083399841096,
+  "rtf": 0.11310305089214774,
+  "peak_memory_gb": 0.860095011
+}

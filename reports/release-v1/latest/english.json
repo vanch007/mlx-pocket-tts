@@ -1,0 +1,21 @@
+{
+  "model": "models/english-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/english.wav",
+  "samples": 63360,
+  "sample_rate": 24000,
+  "audio_seconds": 2.64,
+  "load_seconds": 0.05909520799468737,
+  "generation_seconds": 0.2515129590028664,
+  "time_to_first_audio_seconds": 0.043076417001429945,
+  "rtf": 0.09527006022835849,
+  "peak_memory_gb": 0.878093373,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.6527643799781799,
+    "maximum": 0.40725377202033997,
+    "rms": 0.10086116939783096,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.014046717435121536
+  }
+}

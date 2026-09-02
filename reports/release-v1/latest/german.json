@@ -1,0 +1,21 @@
+{
+  "model": "models/german-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/german.wav",
+  "samples": 67200,
+  "sample_rate": 24000,
+  "audio_seconds": 2.8,
+  "load_seconds": 0.02866008300043177,
+  "generation_seconds": 0.24093849999917438,
+  "time_to_first_audio_seconds": 0.18874625000171363,
+  "rtf": 0.08604946428541943,
+  "peak_memory_gb": 0.878709896,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.6308092474937439,
+    "maximum": 0.4891766905784607,
+    "rms": 0.1243664026260376,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.0168601181358099
+  }
+}

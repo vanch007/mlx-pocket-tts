@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "cfg_distillation": {
+    "cfg_coef": 3.0,
+    "loss": 1.190051555633545,
+    "grad_norm": 15.125,
+    "train_step_sec": 0.1756962500003283,
+    "optimizer_step": 1,
+    "strict_export_load": true,
+    "finite_audio": true,
+    "peak_rss_gb": 1.52276611328125,
+    "asr_transcript": "CFG distillation runs natively with MLX.",
+    "wer": 0.0,
+    "status": "pass"
+  },
+  "depth_distillation": {
+    "teacher_layers": 24,
+    "student_layers": 6,
+    "selected_teacher_layers": [0, 1, 2, 21, 22, 23],
+    "loss": 0.33207035064697266,
+    "grad_norm": 1.671875,
+    "train_step_sec": 0.10438058299769182,
+    "optimizer_step": 1,
+    "strict_export_load": true,
+    "finite_audio": true,
+    "peak_rss_gb": 2.0768890380859375,
+    "asr_transcript": "von der nach nach nach",
+    "wer": 1.0,
+    "smoke_status": "pass",
+    "quality_status": "fail",
+    "disposition": "one-step architecture smoke only; convergence training is required before release"
+  }
+}

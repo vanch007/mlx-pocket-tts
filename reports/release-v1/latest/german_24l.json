@@ -1,0 +1,21 @@
+{
+  "model": "models/german_24l-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/german_24l.wav",
+  "samples": 84480,
+  "sample_rate": 24000,
+  "audio_seconds": 3.52,
+  "load_seconds": 0.1348811249990831,
+  "generation_seconds": 0.671778333002294,
+  "time_to_first_audio_seconds": 0.09206475000246428,
+  "rtf": 0.19084611733019716,
+  "peak_memory_gb": 1.600032452,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.6107214093208313,
+    "maximum": 0.39443621039390564,
+    "rms": 0.11835183948278427,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.006178976967930794
+  }
+}

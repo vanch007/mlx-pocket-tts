@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "model": "<PROJECT_ROOT>/models/english-clone-mlx-8bit",
+  "first": {
+    "status": "pass",
+    "encoded": 2,
+    "reused": 0,
+    "entries": 2,
+    "manifest": "<PROJECT_ROOT>/outputs/full-parity/training/cache/tiny_latents.jsonl",
+    "meta": "<PROJECT_ROOT>/outputs/full-parity/training/cache/tiny_latents.meta.json",
+    "encoder_fingerprint": "17266fc420afbd3d22279e9b62672fe1fc66b3711b0d955b62cf86d6e9fc65c8",
+    "seconds": 0.08171937500446802
+  },
+  "second": {
+    "status": "pass",
+    "encoded": 0,
+    "reused": 2,
+    "entries": 2,
+    "manifest": "<PROJECT_ROOT>/outputs/full-parity/training/cache/tiny_latents.jsonl",
+    "meta": "<PROJECT_ROOT>/outputs/full-parity/training/cache/tiny_latents.meta.json",
+    "encoder_fingerprint": "17266fc420afbd3d22279e9b62672fe1fc66b3711b0d955b62cf86d6e9fc65c8",
+    "seconds": 0.03416004199971212
+  }
+}

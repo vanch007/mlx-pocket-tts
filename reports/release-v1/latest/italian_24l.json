@@ -1,0 +1,21 @@
+{
+  "model": "models/italian_24l-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/italian_24l.wav",
+  "samples": 117120,
+  "sample_rate": 24000,
+  "audio_seconds": 4.88,
+  "load_seconds": 0.12748762499541044,
+  "generation_seconds": 0.9166552500028047,
+  "time_to_first_audio_seconds": 0.09176366699830396,
+  "rtf": 0.18783919057434523,
+  "peak_memory_gb": 1.600319586,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.5922045111656189,
+    "maximum": 0.49910637736320496,
+    "rms": 0.10150475800037384,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.04256318509578705
+  }
+}

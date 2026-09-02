@@ -1,0 +1,12 @@
+{
+  "model": "models/english-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/english_alba.wav",
+  "samples": 92160,
+  "sample_rate": 24000,
+  "audio_seconds": 3.84,
+  "load_seconds": 0.07355458300298778,
+  "generation_seconds": 0.7358206670032814,
+  "rtf": 0.19161996536543788,
+  "peak_memory_gb": 0.918586864
+}

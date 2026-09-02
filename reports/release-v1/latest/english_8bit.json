@@ -1,0 +1,21 @@
+{
+  "model": "models/english-public-mlx-8bit",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/english_8bit.wav",
+  "samples": 69120,
+  "sample_rate": 24000,
+  "audio_seconds": 2.88,
+  "load_seconds": 0.04988050000247313,
+  "generation_seconds": 0.17277683300198987,
+  "time_to_first_audio_seconds": 0.026252458003000356,
+  "rtf": 0.05999195590346871,
+  "peak_memory_gb": 0.423708315,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.836133599281311,
+    "maximum": 0.6103438138961792,
+    "rms": 0.12289731204509735,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.007450810167938471
+  }
+}

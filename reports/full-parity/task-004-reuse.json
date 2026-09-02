@@ -1,0 +1,28 @@
+{
+  "model": "models/english-clone-mlx-8bit",
+  "revision": null,
+  "language": null,
+  "output": "<PROJECT_ROOT>/outputs/full-parity/task-004-reuse.wav",
+  "samples": 46080,
+  "sample_rate": 24000,
+  "audio_seconds": 1.92,
+  "load_seconds": 0.03008629100077087,
+  "generation_seconds": 0.16004875000362517,
+  "time_to_first_audio_seconds": 0.12089862500579329,
+  "rtf": 0.08335872396022145,
+  "peak_memory_gb": 0.479325088,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.42383089661598206,
+    "maximum": 0.34177133440971375,
+    "rms": 0.06911183893680573,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.0213758684694767
+  },
+  "asr": {
+    "reference": "Exported voice state import test.",
+    "transcript": "exported voice state import test.",
+    "wer": 0.0,
+    "status": "pass"
+  }
+}

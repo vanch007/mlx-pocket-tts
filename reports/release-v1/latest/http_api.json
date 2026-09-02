@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "health_status": 200,
+  "health": {
+    "status": "healthy",
+    "model_revision": null
+  },
+  "tts_status": 200,
+  "content_type": "audio/wav",
+  "bytes": 122924,
+  "riff": "RIFF",
+  "empty_text_status": 422
+}

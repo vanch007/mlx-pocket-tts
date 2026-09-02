@@ -1,0 +1,22 @@
+{
+  "model": "<USER_CACHE>/mlx_pocket_tts/quantized/bad26fb47f766f79",
+  "revision": null,
+  "language": "german",
+  "output": "<PROJECT_ROOT>/outputs/full-parity/task-003-stdin.wav",
+  "samples": 42240,
+  "sample_rate": 24000,
+  "audio_seconds": 1.76,
+  "load_seconds": 0.02828116599994246,
+  "generation_seconds": 0.22089458299888065,
+  "time_to_first_audio_seconds": 0.18120254099630984,
+  "rtf": 0.12550828579481854,
+  "peak_memory_gb": 0.470423857,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.5436500310897827,
+    "maximum": 0.4392988383769989,
+    "rms": 0.09283757954835892,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.021519886329770088
+  }
+}

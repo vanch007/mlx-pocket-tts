@@ -1,0 +1,21 @@
+{
+  "model": "models/spanish-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/spanish.wav",
+  "samples": 78720,
+  "sample_rate": 24000,
+  "audio_seconds": 3.28,
+  "load_seconds": 0.031577958005073015,
+  "generation_seconds": 0.3134589999972377,
+  "time_to_first_audio_seconds": 0.24875662499835016,
+  "rtf": 0.09556676829184077,
+  "peak_memory_gb": 0.822742844,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.6962518692016602,
+    "maximum": 0.48220741748809814,
+    "rms": 0.154532328248024,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.024936482310295105
+  }
+}

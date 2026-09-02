@@ -1,0 +1,22 @@
+{
+  "model": "<PROJECT_ROOT>/models/english-clone-mlx-8bit",
+  "revision": null,
+  "language": "english",
+  "output": "<PROJECT_ROOT>/outputs/full-parity/task-003-default-text.wav",
+  "samples": 157440,
+  "sample_rate": 24000,
+  "audio_seconds": 6.56,
+  "load_seconds": 0.05024041699653026,
+  "generation_seconds": 0.4092597080016276,
+  "time_to_first_audio_seconds": 0.2892709170046146,
+  "rtf": 0.06238715061000421,
+  "peak_memory_gb": 0.539503493,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.5908803343772888,
+    "maximum": 0.4059421122074127,
+    "rms": 0.10139721632003784,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.023964684456586838
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "task": "TASK-001",
+  "source_revision": "e244e9a0dad520dad8f61a3c5882e91ea4859439",
+  "model": "models/english-clone-mlx-8bit",
+  "device": "metal",
+  "sample_rate": 24000,
+  "samples": 48000,
+  "load_seconds": 0.05803379099961603,
+  "generation_seconds": 0.26501299999654293,
+  "output": "outputs/full-parity/task-001-api-smoke.wav",
+  "unit_tests": "11 passed",
+  "ruff_check": "pass",
+  "ruff_format": "pass"
+}

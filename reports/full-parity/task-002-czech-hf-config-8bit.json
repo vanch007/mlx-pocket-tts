@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "config": "hf://vvolhejn/pocket-tts-czech/czech.yaml@7b7760dd0fe994a0800f2fdbc837dc4b8f219d1c",
+  "model_path": "<USER_CACHE>/mlx_pocket_tts/quantized/c7c20430ac95f4e3",
+  "audit": {
+    "pass": true,
+    "missing": [],
+    "extra": [],
+    "shape_mismatches": [],
+    "parameter_count": 316
+  },
+  "sample_rate": 24000,
+  "samples": 124800,
+  "audio_seconds": 5.2,
+  "load_convert_quantize_seconds": 96.37126450000505,
+  "generation_seconds": 1.984985584000242,
+  "rtf": 0.3817279969231234,
+  "peak_memory_gb": 1.349598784,
+  "voice": "hf://kyutai/tts-voices/alba-mackenna/casual.wav",
+  "output": "outputs/full-parity/task-002-czech-hf-config-8bit.wav",
+  "alternate_https_config": "https://huggingface.co/vvolhejn/pocket-tts-czech/resolve/7b7760dd0fe994a0800f2fdbc837dc4b8f219d1c/czech.yaml",
+  "https_cache_reuse_status": "pass",
+  "text": "Ahoj světe. Toto je test českého modelu Pocket TTS v MLX.",
+  "asr": {
+    "model": "<USER_CACHE>/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+    "reference": "Ahoj světe. Toto je test českého modelu Pocket TTS v MLX.",
+    "transcript": "Ahoj světe. Toto je test českého modelu Potsket TTS Amorx.",
+    "wer": 0.2727,
+    "status": "pass"
+  }
+}

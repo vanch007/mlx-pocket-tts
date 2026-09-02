@@ -1,0 +1,21 @@
+{
+  "model": "models/english-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/long_stream.wav",
+  "samples": 366720,
+  "sample_rate": 24000,
+  "audio_seconds": 15.28,
+  "load_seconds": 0.060494417004520074,
+  "generation_seconds": 1.1572295839941944,
+  "time_to_first_audio_seconds": 0.04692524999700254,
+  "rtf": 0.07573492041846823,
+  "peak_memory_gb": 0.823936058,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.7713426947593689,
+    "maximum": 0.5576967597007751,
+    "rms": 0.11968011409044266,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.016154013574123383
+  }
+}

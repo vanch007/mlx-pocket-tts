@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "fixture_format": "official training checkpoint .pt",
+  "fixture_step": 123,
+  "flow_tensors": 127,
+  "ema_overlay": true,
+  "temporary_pt_removed_after_run": true,
+  "runtime_torch_imports": 0,
+  "strict_materialized_load": true,
+  "all_parameters_equal": true,
+  "import_and_load_sec": 2.3859982499998296,
+  "samples": 57600,
+  "generation_sec": 0.1940612499965937,
+  "finite": true,
+  "reference": "Legacy checkpoints now load with MLX.",
+  "asr_transcript": "Legacy checkpoints now load with MLX.",
+  "wer": 0.0,
+  "checkpoint_quantize_load": true,
+  "quantize_load_sec": 0.5205211249995045,
+  "quantized_samples": 55680,
+  "quantized_finite": true
+}

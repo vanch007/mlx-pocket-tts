@@ -1,0 +1,21 @@
+{
+  "model": "models/english_2026-01-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/english_2026-01.wav",
+  "samples": 84480,
+  "sample_rate": 24000,
+  "audio_seconds": 3.52,
+  "load_seconds": 0.06213445800676709,
+  "generation_seconds": 0.29255449999618577,
+  "time_to_first_audio_seconds": 0.04222266699798638,
+  "rtf": 0.08311207386255277,
+  "peak_memory_gb": 0.894487203,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.5588279366493225,
+    "maximum": 0.3619890809059143,
+    "rms": 0.11374371498823166,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.016808710992336273
+  }
+}

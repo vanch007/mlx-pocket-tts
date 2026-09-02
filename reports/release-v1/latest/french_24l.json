@@ -1,0 +1,21 @@
+{
+  "model": "models/french_24l-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/french_24l.wav",
+  "samples": 103680,
+  "sample_rate": 24000,
+  "audio_seconds": 4.32,
+  "load_seconds": 0.1305654579991824,
+  "generation_seconds": 0.8041070420003962,
+  "time_to_first_audio_seconds": 0.09102100000018254,
+  "rtf": 0.18613588935194356,
+  "peak_memory_gb": 1.60637909,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.5559325218200684,
+    "maximum": 0.4177257716655731,
+    "rms": 0.122426837682724,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.06642553955316544
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "language": "german",
+  "quantization": "8bit",
+  "model_path": "<USER_CACHE>/mlx_pocket_tts/quantized/bad26fb47f766f79",
+  "audit": {
+    "pass": true,
+    "missing": [],
+    "extra": [],
+    "shape_mismatches": [],
+    "parameter_count": 316
+  },
+  "sample_rate": 24000,
+  "samples": 86400,
+  "audio_seconds": 3.6,
+  "load_and_quantize_seconds": 0.5155369579952094,
+  "generation_seconds": 0.2941089170053601,
+  "rtf": 0.0816969213903778,
+  "peak_memory_gb": 0.483708797,
+  "output": "outputs/full-parity/task-002-german-8bit.wav",
+  "text": "Hallo Welt. Dies ist ein Test der deutschen MLX Sprachausgabe.",
+  "asr": {
+    "model": "<USER_CACHE>/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+    "reference": "Hallo Welt. Dies ist ein Test der deutschen MLX Sprachausgabe.",
+    "transcript": "Hallo Welt, dies ist ein Test der Deutschen MX Sprachausgabe.",
+    "wer": 0.1,
+    "status": "pass"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "model": "<USER_CACHE>/mlx_pocket_tts/quantized/c7c20430ac95f4e3",
+  "revision": null,
+  "language": null,
+  "output": "<PROJECT_ROOT>/outputs/full-parity/task-003-hf-config.wav",
+  "samples": 61440,
+  "sample_rate": 24000,
+  "audio_seconds": 2.56,
+  "load_seconds": 0.030988291997346096,
+  "generation_seconds": 0.6648544159979792,
+  "time_to_first_audio_seconds": 0.627987291001773,
+  "rtf": 0.25970875624921064,
+  "peak_memory_gb": 1.420955667,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.8019347786903381,
+    "maximum": 0.6127305626869202,
+    "rms": 0.10977660119533539,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.06433919817209244
+  }
+}

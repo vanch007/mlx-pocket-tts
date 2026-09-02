@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "threshold": 0.25,
+  "reference": "<USER_HOME>/tts-test-project/data/reference_audio/dots_seedtts_en_ref.wav",
+  "backend": "speechbrain_ecapa_voxceleb",
+  "model_id": "speechbrain/spkrec-ecapa-voxceleb",
+  "model_artifact_sha256": "0575cb64845e6b9a10db9bcb74d5ac32b326b8dc90352671d345e2ee3d0126a2",
+  "device": "mps",
+  "reference_consistency": 0.9408254981040955,
+  "cases": [
+    {
+      "name": "official_clone",
+      "audio": "reports/release-v1/latest/official_clone.wav",
+      "cosine": 0.38028231263160706,
+      "median_cosine": 0.380964070558548,
+      "p10_cosine": 0.3790161907672882,
+      "generated_segments": 3,
+      "status": "pass"
+    },
+    {
+      "name": "official_clone_reuse",
+      "audio": "reports/release-v1/latest/official_clone_reuse.wav",
+      "cosine": 0.36553476929664613,
+      "median_cosine": 0.41041332483291626,
+      "p10_cosine": 0.28218888044357304,
+      "generated_segments": 3,
+      "status": "pass"
+    },
+    {
+      "name": "official_clone_8bit",
+      "audio": "reports/release-v1/latest/official_clone_8bit.wav",
+      "cosine": 0.41384944796562195,
+      "median_cosine": 0.41770313680171967,
+      "p10_cosine": 0.40669259727001195,
+      "generated_segments": 2,
+      "status": "pass"
+    }
+  ]
+}

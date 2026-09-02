@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "device": "Device(gpu, 0)",
+  "model": "models/english-clone-mlx",
+  "batch_shape": [1, 3, 32],
+  "initial_eval_loss": 0.7665238976478577,
+  "final_eval_loss": 0.4658775329589844,
+  "relative_change": -0.3922204716792675,
+  "train_loss_first5": 1.811006784439087,
+  "train_loss_last5": 0.3636651813983917,
+  "interrupted_at_step": 10,
+  "restored_step": 10,
+  "weights_equal_after_restore": true,
+  "optimizer_step_after_resume": 30,
+  "elapsed_sec": 8.313473875001364,
+  "checkpoints": [
+    "outputs/full-parity/training/task-007-overfit/checkpoint_00000010.json",
+    "outputs/full-parity/training/task-007-overfit/checkpoint_00000030.json"
+  ]
+}

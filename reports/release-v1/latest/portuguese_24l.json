@@ -1,0 +1,21 @@
+{
+  "model": "models/portuguese_24l-public-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/portuguese_24l.wav",
+  "samples": 84480,
+  "sample_rate": 24000,
+  "audio_seconds": 3.52,
+  "load_seconds": 0.13572183300129836,
+  "generation_seconds": 0.6789962920011021,
+  "time_to_first_audio_seconds": 0.09018112500052666,
+  "rtf": 0.19289667386394946,
+  "peak_memory_gb": 1.599554738,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.6587225198745728,
+    "maximum": 0.5252284407615662,
+    "rms": 0.13410690426826477,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.009730113670229912
+  }
+}

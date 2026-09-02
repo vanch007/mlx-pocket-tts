@@ -1,0 +1,12 @@
+{
+  "model": "mlx-community/pocket-tts",
+  "revision": "cbf71d5f6657bbc3f4bc02f85ee408261225bec7",
+  "output": "<PROJECT_ROOT>/reports/baseline/standalone_english.wav",
+  "samples": 76800,
+  "sample_rate": 24000,
+  "audio_seconds": 3.2,
+  "load_seconds": 0.05496112499531591,
+  "generation_seconds": 2.6774669160004123,
+  "rtf": 0.8367084112501288,
+  "peak_memory_gb": 0.949266448
+}

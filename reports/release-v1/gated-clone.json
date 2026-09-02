@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "repository": "kyutai/pocket-tts",
+  "observed_revision": "492522650173a0653b7575cdc25ae09810e5d741",
+  "access": "authorized",
+  "strict_conversion": "pass",
+  "reference_audio_clone": "pass",
+  "voice_state_export_import": "pass",
+  "asr_wer": 0.0,
+  "speaker_cosine": 0.38028231263160706,
+  "speaker_p10": 0.3790161907672882,
+  "quantized_8bit_clone": "pass",
+  "public_fallback_repository": "kyutai/pocket-tts-without-voice-cloning",
+  "public_fallback_revision": "d29db7978e464fb90cb3359ee0c69a273b9142cc"
+}

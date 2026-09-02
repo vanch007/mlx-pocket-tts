@@ -22,7 +22,7 @@ Use a staged native port rather than a line-by-line translation or a dual-backen
 Each stage has its own acceptance evidence and may not be reported complete until its gates pass.
 
 1. Exact inference, Python API, CLI, configuration and model-loading compatibility.
-2. Gradio Web UI, FastAPI streaming and batch voice export.
+2. Official FastAPI static streaming Web UI, HTTP streaming and batch voice export.
 3. Native MLX data preparation, latent caching and basic training loop.
 4. Checkpointing, exact resume, EMA, tokenizer tooling and inference export.
 5. Depth distillation, CFG distillation and legacy PyTorch checkpoint import.
@@ -56,7 +56,7 @@ surface.
 
 ### 3.3 Serving and Web UI
 
-- Provide a Gradio interface with the same user purpose and controls as official `serve`.
+- Package and serve the pinned official static streaming Web UI from FastAPI.
 - Preserve the existing FastAPI health and streaming WAV endpoints.
 - Serialize mutation of stateful codec/model instances or use explicitly isolated instances.
 - Support configured default voice, uploaded reference audio, reusable voice states, language and
@@ -196,7 +196,7 @@ environment, source commit, model revision, configuration, logs and output index
 
 - Real generation for all six languages and both 12- and 24-layer architecture paths.
 - Preset voice, arbitrary cloning, voice-state export/import, long text and incremental streaming.
-- Gradio Web UI and FastAPI streaming endpoint.
+- Official static Web UI and FastAPI streaming endpoint.
 - Audio validity, ASR/WER, reference leakage, ECAPA similarity, time to first audio, RTF, duration
   and peak memory.
 
@@ -229,7 +229,7 @@ The README and linked documentation must include:
 - six-language and 12/24-layer model matrix with pinned revisions;
 - preset voice, cloning, voice-state and Hugging Face authorization workflows;
 - Python API and complete CLI reference;
-- Gradio and FastAPI use;
+- official Web UI and FastAPI use;
 - native training data preparation, scratch training and resume;
 - EMA, checkpoint, distillation and export workflows;
 - compatibility matrix and explicit non-applicable platform features;

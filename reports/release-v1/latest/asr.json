@@ -1,0 +1,143 @@
+{
+  "status": "pass",
+  "asr_model": "<USER_CACHE>/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "max_wer": 0.5,
+  "cases": [
+    {
+      "name": "english",
+      "language": "en",
+      "reference": "Hello from Pocket TTS on Apple silicon.",
+      "transcript": "Hello from Pocket TTS on Apple Silicon.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "english_2026-01",
+      "language": "en",
+      "reference": "This older English checkpoint still works with MLX.",
+      "transcript": "This older English checkpoint still works with MLX.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "english_2026-04",
+      "language": "en",
+      "reference": "The latest English checkpoint runs locally with MLX.",
+      "transcript": "The latest English checkpoint runs locally with MLX.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "french_24l",
+      "language": "fr",
+      "reference": "Bonjour, ce modèle français fonctionne localement sur Apple silicon.",
+      "transcript": "Bonjour. Ce modèle français fonctionne localement sur Apple Silicon.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "spanish_24l",
+      "language": "es",
+      "reference": "Hola, este modelo español funciona localmente con Apple silicon.",
+      "transcript": "Hola, este modelo español funciona localmente con Apple Silicon.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "german_24l",
+      "language": "de",
+      "reference": "Hallo, dieses deutsche Modell läuft lokal auf Apple silicon.",
+      "transcript": "Hallo, dieses deutsche Modell läuft Lokal auf Apple Silicon.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "german",
+      "language": "de",
+      "reference": "Hallo, dieses kompakte deutsche Modell läuft lokal.",
+      "transcript": "Hallo, dieses kompakte deutsche Modell läuft lokal.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "portuguese_24l",
+      "language": "pt",
+      "reference": "Olá, este modelo português funciona localmente no Apple silicon.",
+      "transcript": "Olá, este modelo português funciona localmente no Apple Silicon.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "portuguese",
+      "language": "pt",
+      "reference": "Olá, este modelo português compacto funciona localmente.",
+      "transcript": "Olá, este modelo português compacto funciona localmente.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "italian_24l",
+      "language": "it",
+      "reference": "Ciao, questo modello italiano funziona localmente su Apple silicon.",
+      "transcript": "Ciao! Questo modello italiano funziona localmente su Apple Silicon.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "italian",
+      "language": "it",
+      "reference": "Ciao, questo modello italiano compatto funziona localmente.",
+      "transcript": "Ciao, questo modello italiano compatto funziona localmente.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "spanish",
+      "language": "es",
+      "reference": "Hola, este modelo español compacto funciona localmente.",
+      "transcript": "Hola, este modelo español compacto funciona legalmente.",
+      "wer": 0.1429,
+      "status": "pass"
+    },
+    {
+      "name": "community_clone",
+      "language": "en",
+      "reference": "The cloned reference voice works in the standalone MLX port.",
+      "transcript": "The cloned reference voice works in the standalone MLX port.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "community_clone_reuse",
+      "language": "en",
+      "reference": "The exported cloned voice state can be reused.",
+      "transcript": "the exported cloned voice state can be reused.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "official_clone",
+      "language": "en",
+      "reference": "The newest official Pocket TTS voice cloning weights now run natively with MLX.",
+      "transcript": "The newest official Pocket TTS Voice cloning weights now run natively with MLX.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "official_clone_reuse",
+      "language": "en",
+      "reference": "Reusable voice states preserve the reference speaker across multiple generations.",
+      "transcript": "Reusable voice states preserve the reference speaker across multiple generations.",
+      "wer": 0.0,
+      "status": "pass"
+    },
+    {
+      "name": "official_clone_8bit",
+      "language": "en",
+      "reference": "Eight bit voice cloning also runs locally with the newest official weights.",
+      "transcript": "8-bit voice cloning also runs locally with the newest official weights.",
+      "wer": 0.0833,
+      "status": "pass"
+    }
+  ]
+}

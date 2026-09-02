@@ -1,0 +1,21 @@
+{
+  "model": "models/english-clone-mlx",
+  "revision": null,
+  "output": "<PROJECT_ROOT>/reports/release-v1/latest/official_clone_reuse.wav",
+  "samples": 111360,
+  "sample_rate": 24000,
+  "audio_seconds": 4.64,
+  "load_seconds": 0.03736508399742888,
+  "generation_seconds": 0.39782525000191526,
+  "time_to_first_audio_seconds": 0.0483902499981923,
+  "rtf": 0.08573820043144727,
+  "peak_memory_gb": 0.82223927,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.18191544711589813,
+    "maximum": 0.2023874819278717,
+    "rms": 0.023994527757167816,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.02425467036664486
+  }
+}

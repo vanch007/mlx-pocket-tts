@@ -1,0 +1,22 @@
+{
+  "model": "dist/mlx-pocket-tts-8bit",
+  "revision": null,
+  "language": null,
+  "output": "<PROJECT_ROOT>/outputs/release-upload-final.wav",
+  "samples": 84480,
+  "sample_rate": 24000,
+  "audio_seconds": 3.52,
+  "load_seconds": 0.09269408299587667,
+  "generation_seconds": 1.1906709579925518,
+  "time_to_first_audio_seconds": 0.7001595829933649,
+  "rtf": 0.3382587948842477,
+  "peak_memory_gb": 0.354801945,
+  "waveform": {
+    "finite": true,
+    "minimum": -0.5641877055168152,
+    "maximum": 0.40550345182418823,
+    "rms": 0.10747993737459183,
+    "clipping_ratio": 0.0,
+    "silence_ratio": 0.00624999962747097
+  }
+}
