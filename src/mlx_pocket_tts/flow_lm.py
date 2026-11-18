@@ -129,6 +129,7 @@ class FlowLMModel(nn.Module):
             tokenizer_path=str(config.lookup_table.tokenizer_path),
             dim=config.lookup_table.dim,
             output_dim=d_model,
+            tokenizer_kind=config.lookup_table.tokenizer,
         )
         transformer = StreamingTransformer(
             d_model=d_model,

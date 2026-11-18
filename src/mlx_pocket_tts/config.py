@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Optional, Tuple
 
@@ -161,7 +161,12 @@ class ModelConfig(BaseModelArgs):
     pad_with_spaces_for_short_inputs: bool = False
     model_recommended_frames_after_eos: int | None = None
     remove_semicolons: bool = False
+    append_terminal_punctuation: bool = True
+    capitalize_first_letter: bool = True
+    replace_characters: dict[str, str] = field(default_factory=dict)
     has_voice_cloning: bool = True
+    # MLX extension: HF revision of the preset-voice states matching these weights (v3.3+ configs).
+    predefined_voice_revision: str | None = None
 
     @classmethod
     def from_dict(cls, config: dict[str, Any]) -> "ModelConfig":
@@ -176,7 +181,11 @@ class ModelConfig(BaseModelArgs):
             pad_with_spaces_for_short_inputs=config.get("pad_with_spaces_for_short_inputs", False),
             model_recommended_frames_after_eos=config.get("model_recommended_frames_after_eos"),
             remove_semicolons=config.get("remove_semicolons", False),
+            append_terminal_punctuation=config.get("append_terminal_punctuation", True),
+            capitalize_first_letter=config.get("capitalize_first_letter", True),
+            replace_characters=dict(config.get("replace_characters") or {}),
             has_voice_cloning=config.get("has_voice_cloning", True),
+            predefined_voice_revision=config.get("predefined_voice_revision"),
         )
 
 

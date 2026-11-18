@@ -225,7 +225,11 @@ class Model(nn.Module):
             if language is not None:
                 return self._load_voice_file(
                     download_if_necessary(
-                        predefined_voice_source(audio_conditioning, language=language)
+                        predefined_voice_source(
+                            audio_conditioning,
+                            language=language,
+                            revision=self.config.predefined_voice_revision,
+                        )
                     )
                 )
             prompt = load_predefined_voice(audio_conditioning)
@@ -321,6 +325,9 @@ class Model(nn.Module):
             max_tokens,
             self.config.pad_with_spaces_for_short_inputs,
             self.config.remove_semicolons,
+            self.config.append_terminal_punctuation,
+            self.config.capitalize_first_letter,
+            self.config.replace_characters,
         )
         for chunk in chunks:
             self._slice_flow_cache(model_state, prompt_num_frames)
@@ -328,6 +335,9 @@ class Model(nn.Module):
                 chunk,
                 self.config.pad_with_spaces_for_short_inputs,
                 self.config.remove_semicolons,
+                self.config.append_terminal_punctuation,
+                self.config.capitalize_first_letter,
+                self.config.replace_characters,
             )
             effective_frames_after_eos = (
                 frames_after_eos

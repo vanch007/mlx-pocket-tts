@@ -30,6 +30,7 @@ _voices_names = [
     "vera",
 ]
 OFFICIAL_VOICE_NAMES = set(_voices_names) | {
+    "daan",
     "giovanni",
     "lola",
     "juergen",
@@ -46,7 +47,7 @@ PREDEFINED_VOICES = {
 }
 
 
-def predefined_voice_source(voice_name: str, language: str | None = None) -> str:
+def predefined_voice_source(voice_name: str, language: str | None = None, revision: str | None = None) -> str:
     """Return the released voice state matching the model language.
 
     Preset states are model-specific. Reusing the English root embedding with a
@@ -60,7 +61,7 @@ def predefined_voice_source(voice_name: str, language: str | None = None) -> str
     if language is not None:
         return (
             "hf://kyutai/pocket-tts-without-voice-cloning/languages/"
-            f"{language}/embeddings/{voice_name}.safetensors@{PREDEFINED_VOICE_REVISION}"
+            f"{language}/embeddings/{voice_name}.safetensors@{revision or PREDEFINED_VOICE_REVISION}"
         )
     if voice_name not in PREDEFINED_VOICES:
         raise ValueError(
